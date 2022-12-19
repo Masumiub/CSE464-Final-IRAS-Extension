@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Question"
+        android:textSize="30dp"
+        />
+    <EditText
+        android:id="@+id/CourseID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course ID"
+        />
+    <EditText
+        android:id="@+id/Question1ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question1"
+        />
+    <EditText
+        android:id="@+id/Question2ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question2"
+        />
+    <EditText
+        android:id="@+id/Question3ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question3"
+        />
+    <EditText
+        android:id="@+id/Question4ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question4"
+        />
+    <EditText
+        android:id="@+id/Question5ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question5"
+        />
+    <Button
+        android:id="@+id/saveQuestionBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Question"
+        />
+
+
+</LinearLayout>

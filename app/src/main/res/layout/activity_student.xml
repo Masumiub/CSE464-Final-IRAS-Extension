@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".StudentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/iublogo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student DashBoard"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md Masum Musfique"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student, IUB"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/viewCourseOutlineBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Course Outline"/>
+
+    <Button
+        android:id="@+id/viewQuestionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Questions"/>
+
+    <EditText
+        android:id="@+id/coruseID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CourseID"
+        />
+    <EditText
+        android:id="@+id/studentID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="StudentID"
+        />
+    <EditText
+        android:id="@+id/answer1ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Answer1"
+        />
+    <EditText
+        android:id="@+id/answer2ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Answer2"
+        />
+    <EditText
+        android:id="@+id/answer3ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Answer3"
+        />
+    <EditText
+        android:id="@+id/answer4ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Answer4"
+        />
+    <EditText
+        android:id="@+id/answer5ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Answer5"
+        />
+<Button
+    android:id="@+id/submitAnsBtnID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Submit Answers"
+    />
+
+    <Button
+        android:id="@+id/viewGradeBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Grade"
+        />
+</LinearLayout>
