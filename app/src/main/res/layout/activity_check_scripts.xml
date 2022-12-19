@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".CheckScriptsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Exam Scripts"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        />
+
+
+    <Button
+        android:id="@+id/CheckAnswerBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Answers"/>
+
+
+        <EditText
+            android:id="@+id/CourseGradeID"
+            android:hint="CourseID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/StudentGradeID"
+            android:hint="StudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    <EditText
+        android:id="@+id/GradeID"
+        android:hint="Grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/submitGradeBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Grade"
+        />
+</LinearLayout>

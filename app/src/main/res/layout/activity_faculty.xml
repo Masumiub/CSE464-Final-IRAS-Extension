@@ -134,38 +134,38 @@
         android:layout_height="wrap_content"
         android:text="Check Answers"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        >
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center"-->
+<!--        >-->
 
-    <EditText
-        android:id="@+id/CourseGradeID"
-        android:hint="CourseID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-    <EditText
-        android:id="@+id/StudentGradeID"
-        android:hint="StudentID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+<!--    <EditText-->
+<!--        android:id="@+id/CourseGradeID"-->
+<!--        android:hint="CourseID"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:id="@+id/StudentGradeID"-->
+<!--        android:hint="StudentID"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
 
-    </LinearLayout>
-    <EditText
-        android:id="@+id/GradeID"
-        android:hint="Grade"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
-    <Button
-        android:id="@+id/submitGradeBtnID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit Grade"
-        />
+<!--    </LinearLayout>-->
+<!--    <EditText-->
+<!--        android:id="@+id/GradeID"-->
+<!--        android:hint="Grade"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/submitGradeBtnID"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Submit Grade"-->
+<!--        />-->
 
 </LinearLayout>
