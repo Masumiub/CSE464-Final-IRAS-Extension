@@ -20,7 +20,7 @@ public class CheckScriptsActivity extends AppCompatActivity implements View.OnCl
 
     private EditText course_grade_id, student_grade_id, grade;
     private Button SubmitGradeBtn;
-
+    private Button ViewAllGradesBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +42,35 @@ public class CheckScriptsActivity extends AppCompatActivity implements View.OnCl
 
         SubmitGradeBtn = (Button)findViewById(R.id.submitGradeBtnID);
         SubmitGradeBtn.setOnClickListener(this);
+
+        ViewAllGradesBtn = (Button)findViewById(R.id.viewAllGradesBtnID);
+        ViewAllGradesBtn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
 
-        if(view.getId()==R.id.CheckAnswerBtnID){ //CheckAnswerBtnID
+        if(view.getId()==R.id.viewAllGradesBtnID ){ //View all grades
+            Cursor gradeset = gradeHelperClass.displayAllData();
+
+            if(gradeset.getCount()==0){
+                showGrade("Error","No Data Found!");
+                return;
+            }
+            else{
+                StringBuffer stringBufferGrade = new StringBuffer();
+                while(gradeset.moveToNext()){
+                    stringBufferGrade.append("Sno :"+gradeset.getString(0) +"\n");
+                    stringBufferGrade.append("Course ID :"+gradeset.getString(1) +"\n");
+                    stringBufferGrade.append("Student ID :"+gradeset.getString(2) +"\n");
+                    stringBufferGrade.append("Grade :"+gradeset.getString(3) +"\n \n");
+                }
+                showGrade("All Student Grades", stringBufferGrade.toString());
+            }
+        }
+
+
+        if(view.getId()==R.id.CheckAnswerBtnID){  //CheckAnswerBtnID
             Cursor answerset = answerHelperClass.displayAllData();
 
             if(answerset.getCount()==0){
@@ -69,7 +92,6 @@ public class CheckScriptsActivity extends AppCompatActivity implements View.OnCl
                 showAnswer("All Exam Answers", stringBufferAns.toString());
             }
         }
-
         String Course_Grade_Id = course_grade_id.getText().toString();
         String Student_Grade_Id = student_grade_id.getText().toString();
         String Grade = grade.getText().toString();
@@ -88,6 +110,15 @@ public class CheckScriptsActivity extends AppCompatActivity implements View.OnCl
     }
 
     public void showAnswer(String title, String message){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.setCancelable(true);
+
+        builder.show();
+    }
+
+    public void showGrade(String title, String message){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(title);
         builder.setMessage(message);

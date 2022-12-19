@@ -50,4 +50,11 @@
         android:layout_height="wrap_content"
         android:text="Submit Grade"
         />
+
+    <Button
+        android:id="@+id/viewAllGradesBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Grades"
+        />
 </LinearLayout>
